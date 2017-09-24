@@ -647,6 +647,8 @@ GameObject:
   - component: {fileID: 114683316853927638}
   - component: {fileID: 114899010343756278}
   - component: {fileID: 114040995805122814}
+  - component: {fileID: 114373800329003470}
+  - component: {fileID: 114763637304849050}
   m_Layer: 12
   m_Name: Enemy_Golem
   m_TagString: Untagged
@@ -2064,6 +2066,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8745c096fed2bc4fb41df7908094c67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114373800329003470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1682805946043962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c1a1ec48259904291c45eb94fad6a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114455114684489554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2087,6 +2100,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57aa4a9d2fef7e844bc8397e5346d5c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114763637304849050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1682805946043962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4c0f4dbde3c384cb732908b0850d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114899010343756278
