@@ -6,6 +6,9 @@ public class Enemy_Master : MonoBehaviour {
 
     public Transform myTarget;
 
+    public bool isOnRoot;
+    public bool isNavPaused;
+
     public delegate void GeneralEventHandler();
     public event GeneralEventHandler EventEnemyDie;
     public event GeneralEventHandler EventEnemyWalking;
