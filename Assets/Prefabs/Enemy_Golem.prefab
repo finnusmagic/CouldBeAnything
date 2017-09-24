@@ -643,6 +643,9 @@ GameObject:
   - component: {fileID: 4734812849679390}
   - component: {fileID: 95029771133743534}
   - component: {fileID: 195400646609638478}
+  - component: {fileID: 114455114684489554}
+  - component: {fileID: 114683316853927638}
+  - component: {fileID: 114899010343756278}
   m_Layer: 12
   m_Name: Enemy_Golem
   m_TagString: Untagged
@@ -2041,14 +2044,55 @@ Animator:
   m_GameObject: {fileID: 1682805946043962}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 105d2f3bd897c12499d4aa80ee9733d8, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114455114684489554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1682805946043962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc96f0574084f9546ac977710e949b6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTarget: {fileID: 0}
+--- !u!114 &114683316853927638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1682805946043962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57aa4a9d2fef7e844bc8397e5346d5c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114899010343756278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1682805946043962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f12a271816f734d90e514604d81c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 4436521282383078}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  sightLayer:
+    serializedVersion: 2
+    m_Bits: 4294962393
 --- !u!135 &135387691134464882
 SphereCollider:
   m_ObjectHideFlags: 1
