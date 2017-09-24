@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager_RestartLevel : MonoBehaviour {
 
-    GameManagerMaster gameManagerMaster;
+    GameManager_Master gameManagerMaster;
 
     void OnEnable()
     {
@@ -20,7 +20,7 @@ public class GameManager_RestartLevel : MonoBehaviour {
 
     void SetInitialReferences()
     {
-        gameManagerMaster = GetComponent<GameManagerMaster>();
+        gameManagerMaster = GetComponent<GameManager_Master>();
     }
 
     void RestartLevel()

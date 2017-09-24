@@ -6,7 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class GameManager_TogglePlayer : MonoBehaviour {
 
     public FirstPersonController playerController;
-    GameManagerMaster gameManagerMaster;
+    GameManager_Master gameManagerMaster;
 
     void OnEnable()
     {
@@ -23,7 +23,7 @@ public class GameManager_TogglePlayer : MonoBehaviour {
 
     void SetInitialReferences()
     {
-        gameManagerMaster = GetComponent<GameManagerMaster>();
+        gameManagerMaster = GetComponent<GameManager_Master>();
     }
 
     void TogglePlayerController()

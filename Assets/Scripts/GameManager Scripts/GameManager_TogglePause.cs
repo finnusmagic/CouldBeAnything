@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager_TogglePause : MonoBehaviour {
 
-    GameManagerMaster gameManagerMaster;
+    GameManager_Master gameManagerMaster;
 
     bool isPaused;
 
@@ -23,7 +23,7 @@ public class GameManager_TogglePause : MonoBehaviour {
 
     void SetInitialReferences()
     {
-        gameManagerMaster = GetComponent<GameManagerMaster>();
+        gameManagerMaster = GetComponent<GameManager_Master>();
     }
 
     void TogglePause()

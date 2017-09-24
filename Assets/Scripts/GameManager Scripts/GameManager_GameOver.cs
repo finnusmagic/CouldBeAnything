@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager_GameOver : MonoBehaviour {
 
-    GameManagerMaster gameManagerMaster;
+    GameManager_Master gameManagerMaster;
     public GameObject panelGameOver;
 
     void OnEnable()
@@ -20,7 +20,7 @@ public class GameManager_GameOver : MonoBehaviour {
 
     void SetInitialReferences()
     {
-        gameManagerMaster = GetComponent<GameManagerMaster>();
+        gameManagerMaster = GetComponent<GameManager_Master>();
     }
 
     void TurnOnGameOverPanel()

@@ -8,7 +8,7 @@ public class GameManager_ToggleInventoryUI : MonoBehaviour {
     public bool hasInventory;
     public GameObject inventoryUI;
     public string toggleInventoryButton;
-    GameManagerMaster gameManagerMaster;
+    GameManager_Master gameManagerMaster;
 
     void Start()
     {
@@ -22,7 +22,7 @@ public class GameManager_ToggleInventoryUI : MonoBehaviour {
 
     void SetInitialReferences()
     {
-        gameManagerMaster = GetComponent<GameManagerMaster>();
+        gameManagerMaster = GetComponent<GameManager_Master>();
 
         if (toggleInventoryButton == "")
         {
@@ -39,7 +39,7 @@ public class GameManager_ToggleInventoryUI : MonoBehaviour {
         }
     }
 
-    void ToggleInventoryUI()
+    public void ToggleInventoryUI()
     {
         if (inventoryUI != null)
         {

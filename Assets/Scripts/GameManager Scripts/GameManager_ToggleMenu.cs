@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager_ToggleMenu : MonoBehaviour {
 
-    GameManagerMaster gameManagerMaster;
+    GameManager_Master gameManagerMaster;
     public GameObject menu;
 
     void Start()
@@ -30,7 +30,7 @@ public class GameManager_ToggleMenu : MonoBehaviour {
 
     void SetInitialReferences()
     {
-        gameManagerMaster = GetComponent<GameManagerMaster>();
+        gameManagerMaster = GetComponent<GameManager_Master>();
     }
 
     void CheckForMenuToggleRequest()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager_ToggleCursor : MonoBehaviour {
 
-    GameManagerMaster gameManagerMaster;
+    GameManager_Master gameManagerMaster;
     bool isCursorLocked = true;
 
 	void OnEnable()
@@ -27,7 +27,7 @@ public class GameManager_ToggleCursor : MonoBehaviour {
 
     void SetInitialReferences()
     {
-        gameManagerMaster = GetComponent<GameManagerMaster>();
+        gameManagerMaster = GetComponent<GameManager_Master>();
     }
 
     void ToggleCursorState()
