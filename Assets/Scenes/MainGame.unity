@@ -3899,33 +3899,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &1655663220 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1682805946043962, guid: b575b41be2948e344b3fe0c28e502c55,
-    type: 2}
-  m_PrefabInternal: {fileID: 1069382354}
---- !u!114 &1655663228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1655663220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c1a1ec48259904291c45eb94fad6a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1655663229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1655663220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4c0f4dbde3c384cb732908b0850d84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1678714702
 GameObject:
   m_ObjectHideFlags: 0
