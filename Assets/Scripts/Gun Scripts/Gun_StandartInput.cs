@@ -17,16 +17,6 @@ public class Gun_StandartInput : MonoBehaviour {
     public string reloadButtonName;
     public string burstFireButtonName;
 
-	void OnEnable()
-    {
-		
-    }
-
-    void OnDisable()
-    {
-        
-    }
-
 	void Start () 
 	{
         SetInitialReferences();
@@ -35,8 +25,8 @@ public class Gun_StandartInput : MonoBehaviour {
 	void Update () 
 	{
         CheckIfWeaponShouldAttack();
-        CheckForReloadRequest();
         CheckForBurstFireToggle();
+        CheckForReloadRequest();
 	}
 
 	void SetInitialReferences()

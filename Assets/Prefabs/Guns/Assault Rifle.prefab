@@ -74,6 +74,11 @@ GameObject:
   - component: {fileID: 114536100737771840}
   - component: {fileID: 114000800946788736}
   - component: {fileID: 114612616743976004}
+  - component: {fileID: 114718344033628022}
+  - component: {fileID: 114613473963875990}
+  - component: {fileID: 114106583685602402}
+  - component: {fileID: 114970255054134158}
+  - component: {fileID: 114391550534941240}
   m_Layer: 8
   m_Name: Assault Rifle
   m_TagString: Item
@@ -665,7 +670,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1272793123383326}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 40e6666e63a1a954aa0d04434a4a0ee7, type: 2}
   m_CullingMode: 0
@@ -725,6 +730,23 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &114106583685602402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272793123383326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88fd6c9ddf202149ad2c3dd09e85454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootVolume: 0.4
+  reloadVolume: 0.5
+  shootSound:
+  - {fileID: 8300000, guid: 8581f806dddef8046b4942de05b897be, type: 3}
+  - {fileID: 8300000, guid: 30114844b380b88418785402b1e582c0, type: 3}
+  reloadSound: {fileID: 8300000, guid: 3c5c1d4d7b9307c458890a4beb12e4ae, type: 3}
 --- !u!114 &114113266123080238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -928,6 +950,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114391550534941240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272793123383326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b618a5755cf811c49bd2b918925a9200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAmmoField: {fileID: 114187535621729948}
+  carriedAmmoField: {fileID: 114458177594762646}
 --- !u!114 &114442365873267610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1283,6 +1318,17 @@ MonoBehaviour:
     type: 2}
   enemyHitEffect: {fileID: 1869776757794314, guid: 710a88c45f750934b8bb9f52af626fbf,
     type: 2}
+--- !u!114 &114613473963875990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272793123383326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125c912baded1bd4ab56c5c0140f7101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114614651210685356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1390,6 +1436,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114718344033628022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272793123383326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1ed40e593428641be530e22709d328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!114 &114742347158792184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1606,6 +1664,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Enter text...
+--- !u!114 &114970255054134158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272793123383326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1970163ba86ae65429e43b411ba7f361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipSize: 30
+  currentAmmo: 15
+  ammoName: 5.56mm
+  reloadTime: 3
 --- !u!198 &198522557727090242
 ParticleSystem:
   m_ObjectHideFlags: 1
