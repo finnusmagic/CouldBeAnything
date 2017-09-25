@@ -60,7 +60,7 @@ public class Gun_DynamicCrosshair : MonoBehaviour {
     {
         if(transformToSearchThrough != null)
         {
-            if(transformToSearchThrough.name == weaponCamera.name)
+            if(transformToSearchThrough.name == weaponCameraName)
             {
                 weaponCamera = transformToSearchThrough;
                 return;
