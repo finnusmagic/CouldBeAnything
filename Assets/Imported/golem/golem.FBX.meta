@@ -331,7 +331,15 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.57480335
+        functionName: OnEnemyAttack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 48983bc6c07db334b8889eb85b0e6252,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
