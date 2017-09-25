@@ -678,6 +678,7 @@ GameObject:
   - component: {fileID: 114925925924268420}
   - component: {fileID: 114804137344999976}
   - component: {fileID: 114858536522767680}
+  - component: {fileID: 114645389792712016}
   m_Layer: 12
   m_Name: Enemy_Golem
   m_TagString: Untagged
@@ -2349,6 +2350,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ea76cfeb52662448eb7f56ecadd955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114645389792712016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1682805946043962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5892b817be80f374fb52e4eee23b61a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFleeing: 0
+  fleeTarget: {fileID: 0}
+  fleeRange: 25
 --- !u!114 &114683316853927638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2419,6 +2434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 100
+  healthLow: 25
 --- !u!114 &114899010343756278
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -10,7 +10,6 @@ public class Item_SetPosition : MonoBehaviour {
 	void OnEnable() 
 	{
         SetInitialReferences();
-        SetPositionOnPlayer();
         itemMaster.EventObjectPickup += SetPositionOnPlayer;
 	}
 
@@ -19,7 +18,12 @@ public class Item_SetPosition : MonoBehaviour {
         itemMaster.EventObjectPickup -= SetPositionOnPlayer;
     }
 
-	void SetInitialReferences() 
+    void Start()
+    {
+        SetPositionOnPlayer();
+    }
+
+    void SetInitialReferences() 
 	{
         itemMaster = GetComponent<Item_Master>();
 	}

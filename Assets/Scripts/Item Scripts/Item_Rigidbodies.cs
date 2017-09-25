@@ -12,7 +12,6 @@ public class Item_Rigidbodies : MonoBehaviour {
 	void OnEnable() 
 	{
         SetInitialReferences();
-        CheckIfStartsInInventory();
         itemMaster.EventObjectThrow += SetIsKinematicToFalse;
         itemMaster.EventObjectPickup += SetIsKinematicToTrue;
     }
@@ -23,7 +22,12 @@ public class Item_Rigidbodies : MonoBehaviour {
         itemMaster.EventObjectPickup -= SetIsKinematicToTrue;
     }
 
-	void SetInitialReferences() 
+    private void Start()
+    {
+        CheckIfStartsInInventory();
+    }
+
+    void SetInitialReferences() 
 	{
         itemMaster = GetComponent<Item_Master>();
 	}

@@ -21,6 +21,7 @@ public class Player_Inventory : MonoBehaviour {
     void OnEnable()
     {
         SetInitialReferences();
+        DeactivateAllInventoryItems();
         UpdateInventoryListAndUI();
         CheckIfHandIsEmpty();
 
