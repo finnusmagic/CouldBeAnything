@@ -69,6 +69,11 @@ GameObject:
   - component: {fileID: 114277173368751318}
   - component: {fileID: 114648889868618350}
   - component: {fileID: 114442365873267610}
+  - component: {fileID: 114280949680549094}
+  - component: {fileID: 114606932909420588}
+  - component: {fileID: 114536100737771840}
+  - component: {fileID: 114000800946788736}
+  - component: {fileID: 114612616743976004}
   m_Layer: 8
   m_Name: Assault Rifle
   m_TagString: Item
@@ -670,6 +675,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000800946788736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272793123383326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae78c895639bda43958d8bfbd031204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzleFlash: {fileID: 198522557727090242}
 --- !u!114 &114035528562769550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -853,6 +870,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemTag: Item
+--- !u!114 &114280949680549094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272793123383326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1be2f4af2264204fb0e428d5a12da36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRate: 0.2
+  isAutomatic: 1
+  hasBurstFire: 1
+  attackButtonName: Fire1
+  reloadButtonName: Reload
+  burstFireButtonName: Fire2
 --- !u!114 &114309945654142738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1095,6 +1129,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 100
+--- !u!114 &114536100737771840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272793123383326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16768ec7ddbff224e8b2f971e220751e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 400
 --- !u!114 &114538511462456340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1182,6 +1228,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114606932909420588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272793123383326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a577b9133f51dec499918c0e4c726248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGunLoaded: 0
+  isReloading: 0
 --- !u!114 &114608400290681410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1209,6 +1268,21 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114612616743976004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272793123383326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4149157e32e3ab94b9c1348eaeb534f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultHitEffect: {fileID: 1160500817084198, guid: a94a3155f7eb91b45ad640b44a1c6021,
+    type: 2}
+  enemyHitEffect: {fileID: 1869776757794314, guid: 710a88c45f750934b8bb9f52af626fbf,
+    type: 2}
 --- !u!114 &114614651210685356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1591,7 +1665,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 929689340
+  randomSeed: -1254649021
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -1743,7 +1817,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2038,7 +2112,7 @@ ParticleSystem:
     angle: 90
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 1
+    radiusThickness: 0.5
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
@@ -2056,7 +2130,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.1
+      value: 0.01
       mode: 0
       spread: 0
       speed:
